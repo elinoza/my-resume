@@ -47,50 +47,56 @@ export const works = [
     Be: "",
   },
   {
-    projectName: "Linkedin Learning Clone",
+    projectName: "Quiz Game",
     PosterUrl:
-      "https://res.cloudinary.com/elinoza/image/upload/v1700477559/DALL_E_2023-11-20_11.52.44_-_A_softly-colored_image_of_an_open_laptop_on_a_pastel-colored_desk._The_laptop_displays_the_LinkedIn_Learning_website_with_its_screen_showing_a_gentle_wybqz0.png",
+      "https://res.cloudinary.com/elinoza/image/upload/v1700552276/DALL_E_2023-11-21_10.35.56_-_A_young_child_in_their_bedroom_slightly_excited_playing_a_quiz_on_their_laptop._The_child_is_seen_from_a_side_angle_and_the_laptop_screen_has_the_w_yutgnt.png",
     Description:
-      "LinkedIn Learning website clone for watching training videos, skill acquisition, and progress tracking. ",
+      "This is a JavaScript quiz application that asks users questions and provides them with scores.All the animations are made by vanilla CSS.",
     Tools: ["ReactJS", "MongoDB", "ExpressJS"],
-    WebUrl: "https://www.e-learning-platform-fe.vercel.app/",
-    Fe: "https://github.com/elinoza/e-learning-platform-fe",
-    Height: "52",
-    Be: "https://github.com/elinoza/e-learning-platform-be",
+    WebUrl: "https://quiz-fe-elinoza.vercel.app/",
+    Fe: "https://github.com/elinoza/quiz-fe",
+    Be: "https://github.com/elinoza/quiz-be",
   },
-  {
-    projectName: "Weather App",
-    PosterUrl:
-      "https://res.cloudinary.com/elinoza/image/upload/v1700552389/DALL_E_2023-11-21_10.31.44_-_In_a_minimal_and_soft_environment_a_woman_is_seen_from_a_slight_rear_angle_looking_at_her_laptop_with_an_umbrella_beside_her._The_laptop_displays_a_up8mzu.png",
-    Description:
-      "Weather App is a web application that provides weather information for cities around the world.",
-    Tools: ["ReactJS", "MongoDB", "ExpressJS"],
-    WebUrl: "https://weather-app-elinoza.vercel.app",
-    Fe: "https://github.com/elinoza/Weather-App",
-    Height: "64",
-    Be: "https://github.com/elinoza/weather-app-be",
-  },
+  // {
+  //   projectName: "Linkedin Learning Clone",
+  //   PosterUrl:
+  //     "https://res.cloudinary.com/elinoza/image/upload/v1700477559/DALL_E_2023-11-20_11.52.44_-_A_softly-colored_image_of_an_open_laptop_on_a_pastel-colored_desk._The_laptop_displays_the_LinkedIn_Learning_website_with_its_screen_showing_a_gentle_wybqz0.png",
+  //   Description:
+  //     "LinkedIn Learning website clone for watching training videos, skill acquisition, and progress tracking. ",
+  //   Tools: ["ReactJS", "MongoDB", "ExpressJS"],
+  //   WebUrl: "https://e-learning-platform-fe-git-main-elinoza.vercel.app/",
+  //   Fe: "https://github.com/elinoza/e-learning-platform-fe",
+  //   Height: "52",
+  //   Be: "https://github.com/elinoza/e-learning-platform-be",
+  // },
+  // {
+  //   projectName: "Weather App",
+  //   PosterUrl:
+  //     "https://res.cloudinary.com/elinoza/image/upload/v1700552389/DALL_E_2023-11-21_10.31.44_-_In_a_minimal_and_soft_environment_a_woman_is_seen_from_a_slight_rear_angle_looking_at_her_laptop_with_an_umbrella_beside_her._The_laptop_displays_a_up8mzu.png",
+  //   Description:
+  //     "Weather App is a web application that provides weather information for cities around the world.",
+  //   Tools: ["ReactJS", "MongoDB", "ExpressJS"],
+  //   WebUrl: "https://weather-app-elinoza.vercel.app",
+  //   Fe: "https://github.com/elinoza/Weather-App",
+  //   Height: "64",
+  //   Be: "https://github.com/elinoza/weather-app-be",
+  // },
 ];
 
-export const logos = [
-  [
-    "ReactJS",
-    "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
-  ],
-  [
-    "NodeJS",
-    "https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white",
-  ],
-  [
-    "GitHub",
-    "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white",
-  ],
-  [
-    "ExpressJS",
-    "https://img.shields.io/badge/Express.js-404D59?style=for-the-badge",
-  ],
-  [
-    "MongoDB",
-    "https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white",
-  ],
-];
+export const skillSet: Record<
+  string,
+  {
+    icon: string;
+    color: string;
+  }
+> = {
+  Sass: { icon: "SiSass", color: "#C66494" },
+  TailwindCSS: { icon: "BiLogoTypescript", color: "#0EA5EC" },
+  TypeScript: { icon: "BiLogoTypescript", color: "#3274C0" },
+  NEXTJS: { icon: "RiNextjsFill", color: "black" },
+  ReactJS: { icon: "GrReactjs", color: "#00D5F7" },
+  NodeJS: { icon: "FaNodeJs", color: "#519941" },
+  GitHub: { icon: "FaGithub", color: "black" },
+  ExpressJS: { icon: "SiExpress", color: "black" },
+  MongoDB: { icon: "SiMongodb", color: "#4DA53F" },
+};
