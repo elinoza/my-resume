@@ -100,3 +100,77 @@ export const skillSet: Record<
   ExpressJS: { icon: "SiExpress", color: "black" },
   MongoDB: { icon: "SiMongodb", color: "#4DA53F" },
 };
+export const keyStones: Record<
+  any,
+  {
+    date: string;
+    heading: string;
+    description: string;
+    imgSrc: string;
+    height: string;
+    detail: string;
+    website: string;
+    width: string;
+  }
+> = {
+  University: {
+    date: "2008-2012",
+    description: "First touch with algorithms & software.",
+    imgSrc: "/blank1.jpg",
+    detail: "Sakarya University",
+    width: "",
+    height: "h-24",
+    website: "",
+    heading: "Industrial Engineering ",
+  },
+  MetroIstanbul: {
+    date: "2013-2015",
+    description: "Developing HR systems.",
+    imgSrc: "/blank1.jpg",
+    detail: "Istanbul Municipality",
+    width: "",
+    height: "h-24",
+    website: "",
+    heading: "Performance & Talent Management Specialist",
+  },
+  OwnShop: {
+    date: "2017-2020",
+    description: "I was the designer & photographer also.",
+    imgSrc: "/helen.jpg",
+    detail: "",
+    width: "w-64",
+    height: "h-96",
+    website: "https://www.helenstudyo.com/",
+    heading: "Founded my own shop.",
+  },
+  Bootcamp: {
+    date: "2021",
+    description: "I attended 6 month Full-stack course in Epicode",
+    imgSrc: "/chair.jpg",
+    detail: "I picked my chair very diligently for the first time.",
+    width: "",
+    height: "h-96",
+    website: "https://epicode.com/",
+    heading: "My first step to tech world.",
+  },
+  Mom: {
+    date: "2021-2024",
+    description: "Everything has changed since then.A parental break",
+    imgSrc: "/birth.jpeg",
+    detail: "",
+    width: "",
+    height: "h-64",
+    website: "",
+    heading: "Became a mom.",
+  },
+  Cloock: {
+    date: "2024-now",
+    description: "Very lovely cloock.app",
+    imgSrc: "/blank1.jpg",
+    detail: "",
+    width: "",
+    height: "h-24",
+    website: "htps://cloock.co/",
+    heading: "Currently working on this upcoming minimal daily planner app",
+  },
+};
