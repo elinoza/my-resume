@@ -188,7 +188,7 @@ export const keyStones: Record<
     date: "2024-now",
     description:
       "It appeared that leaving an unnecessary 'gap' between two lines of code is a cardinal sin! Lesson learned: keep the code clean and tidy!",
-    imgSrc: "/cloock.png",
+    imgSrc: "/blank1.jpg",
     detail: "Cloock.co",
     width: "",
     height: "h-24",

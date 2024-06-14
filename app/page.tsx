@@ -14,6 +14,18 @@ import { RxVercelLogo } from "react-icons/rx";
 
 export default function Home() {
   const keyStonesArray = Object.keys(keyStones);
+  const heights = [
+    "col-span-2",
+    ,
+    "",
+    "col-span-2",
+    "col-span-3",
+    "",
+    "col-span-2",
+    "",
+    "",
+    "col-span-2",
+  ];
 
   return (
     <main className="container p-1 flex-col mx-auto  ">
@@ -69,7 +81,7 @@ export default function Home() {
         <h1 className="text-7xl  py-5 mt-1 mb-7">Who am I?</h1>
         <p>{profile?.aboutMe}</p>
         <h1 className="text-xl my-5">Key Stones</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3  gap-6">
           {keyStonesArray.reverse().map((stone, i) => (
             <div key={i} className="">
               <div
@@ -106,15 +118,15 @@ export default function Home() {
       <section>
         <hr className="border-zinc-800" />
         <h1 className="text-7xl  py-5 mt-1 mb-7">Work</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2  gap-10">
+        <div className=" grid  grid-cols-3 gap-2 ">
           {" "}
           {works &&
             works.map((work, index) => (
               <a
                 key={index}
                 className={clsx(
-                  // `h-${work.Height}`,
-                  "bg-[#F4F4F4]  min-h-56 rounded-xl p-3 my-3 flex flex-col  justify-between"
+                  heights[index],
+                  "bg-[#F4F4F4] rounded-xl p-3 w-full flex flex-col justify-between hover:shadow-md"
                 )}
                 href={work.WebUrl}
                 target="_blank"
@@ -201,10 +213,13 @@ export default function Home() {
 
       <footer className="text-xl mt-16 flex justify-between">
         {" "}
-        <div className="text-sm flex p-3 [&_span]:mx-2 text-stone-500">
+        <div className="text-sm flex items-center p-3 [&_span]:mx-2 text-stone-500">
           {" "}
-          Built with<span>{<RiNextjsFill />}</span>deployed on{" "}
-          <span>{<RxVercelLogo />}</span>{" "}
+          Built with
+          <span>
+            <RiNextjsFill />
+          </span>
+          deployed on <span>{<RxVercelLogo />}</span>{" "}
         </div>
         <div className="flex gap-x-3 items-center ">
           {" "}
