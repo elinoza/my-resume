@@ -1,9 +1,8 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import clsx from "clsx";
 
-import { works, keyStones } from "../utils/works";
+import { works, keyStones, profile } from "../utils/works";
 import { FaLinkedin, FaGithub, FaAngleDoubleDown } from "react-icons/fa";
 import { FaMedium, FaNodeJs } from "react-icons/fa6";
 import { GrReactjs } from "react-icons/gr";
@@ -12,92 +11,94 @@ import { SiExpress, SiSass } from "react-icons/si";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
 import { RxVercelLogo } from "react-icons/rx";
-import Mom from "../public/birth.jpeg";
-import OwnShop from "../public/helen.jpg";
 
 export default function Home() {
   const keyStonesArray = Object.keys(keyStones);
 
   return (
-    <main className="container flex-col mx-auto  ">
-      <header className="text-stone-400 fixed top-0 left-0 right-0 py-3 px-24 my-5 flex items-center text-xl justify-end">
+    <main className="container p-1 flex-col mx-auto  ">
+      <header className="text-stone-400 fixed top-0 left-0 right-0 py-3 px-24 my-5 flex items-center text-xl justify-end z-10">
         <a
           href="mailto:hillcakmak@gmail.com"
           rel="noopener noreferrer"
-          className="rounded-3xl bg-stone-800 p-2 px-3 text-stone-200"
+          className="hidden sm:block"
         >
-          Contact me
+          <button className=" rounded-3xl bg-stone-800 p-2 px-3 text-stone-200 ">
+            Contact me
+          </button>
         </a>
       </header>
       <section className=" min-h-screen flex flex-col justify-center mt-24">
         <span className="text-sm text-stone-500 mb-2">
           React,Typescript Developer based in Türkiye
         </span>
-        <p className="text-3xl leading-relaxed mb-16">
-          {" "}
-          Greetings! I'm Hilal, a frontend wizard who has a spell for turning
-          coffee into code with my favorite spell: "{"🪄"} Caffeinum Codex!
-        </p>
-        <div className="flex gap-x-3 justify-start text-2xl p-3">
+        <p className="text-3xl leading-relaxed mb-16"> {profile?.jumbotron}</p>
+        <div className="flex  gap-x-3 justify-start text-2xl p-3">
           <a
             href="https://github.com/elinoza"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithub />{" "}
+            <FaGithub className="hover:text-stone-500" />{" "}
           </a>
-          <a href="mailto:hillcakmak@gmail.com" rel="noopener noreferrer">
-            <SiGmail />
+          <a
+            href="mailto:hillcakmak@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SiGmail className="hover:text-stone-500" />
           </a>
           <a
             href="https://www.linkedin.com/in/hilalsemercioglu/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin />
+            <FaLinkedin className="hover:text-stone-500" />
           </a>
           <a
             href="https://medium.com/@hilalsem"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaMedium />{" "}
+            <FaMedium className="hover:text-stone-500" />{" "}
           </a>
         </div>
       </section>
-      <section className="mb-36">
+      <section className="mb-36 ">
         <hr className="border-zinc-800" />
         <h1 className="text-7xl  py-5 mt-1 mb-7">Who am I?</h1>
-        <p>
-          I'm a frontend developer who discovers coding is the best amongst the
-          previous experiences.I enjoy coding (ok bugs can be a headache but
-          still), contributing and writing about it.An industrial engineer. A
-          mom of 1 little boy.
-        </p>
+        <p>{profile?.aboutMe}</p>
         <h1 className="text-xl my-5">Key Stones</h1>
-        <div className=" flex flex-wrap gap-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {keyStonesArray.reverse().map((stone, i) => (
-            <div key={i}>
+            <div key={i} className="">
               <div
                 className={clsx(
-                  "object-none overflow-hidden grayscale relative  bg-black  contrast-110",
-                  keyStones[stone]?.height,
-                  keyStones[stone]?.width
+                  stone !== "Cloock" &&
+                    stone !== "BigBang" &&
+                    "grayscale contrast-110",
+                  " overflow-hidden bg-black "
                 )}
               >
-                <Image
-                  fill={true}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  src={keyStones[stone]?.imgSrc}
-                  alt={stone}
-                />
+                <img src={keyStones[stone]?.imgSrc} alt={stone} />
               </div>
               <span>{keyStones[stone]?.date}</span>
               <h1>{keyStones[stone]?.heading}</h1>
               <p className="text-stone-400">{keyStones[stone]?.description}</p>
-              <p className="text-stone-400 tet-sm">
-                {keyStones[stone]?.detail}
-              </p>
+              {!keyStones[stone]?.website ? (
+                <p className="text-stone-400 tet-sm">
+                  {keyStones[stone]?.detail}
+                </p>
+              ) : (
+                <a
+                  href={keyStones[stone]?.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-stone-400 tet-sm hover:text-black"
+                >
+                  {keyStones[stone]?.detail}
+                </a>
+              )}
             </div>
           ))}
         </div>

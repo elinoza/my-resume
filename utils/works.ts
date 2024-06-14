@@ -113,6 +113,16 @@ export const keyStones: Record<
     width: string;
   }
 > = {
+  BigBang: {
+    date: "25.11.1990",
+    description: "only for me.",
+    imgSrc: "/bigbang.jpg",
+    detail: "",
+    width: "",
+    height: "h-24",
+    website: "",
+    heading: "Big bang.",
+  },
   University: {
     date: "2008-2012",
     description: "First touch with algorithms & software.",
@@ -120,7 +130,7 @@ export const keyStones: Record<
     detail: "Sakarya University",
     width: "",
     height: "h-24",
-    website: "",
+    website: "https://www.sakarya.edu.tr/",
     heading: "Industrial Engineering ",
   },
   MetroIstanbul: {
@@ -130,28 +140,39 @@ export const keyStones: Record<
     detail: "Istanbul Municipality",
     width: "",
     height: "h-24",
-    website: "",
+    website: "https://www.metro.istanbul/en/",
     heading: "Performance & Talent Management Specialist",
+  },
+  Wedding: {
+    date: "2015",
+    description:
+      "I went to university for a degree and ended up with a lifelong roommate!",
+    imgSrc: "/wedding.jpg",
+    detail: "",
+    width: "w-96",
+    height: "h-96",
+    website: "",
+    heading: "got married",
   },
   OwnShop: {
     date: "2017-2020",
-    description: "I was the designer & photographer also.",
+    description: "I was the designer also.",
     imgSrc: "/helen.jpg",
-    detail: "",
+    detail: "Helen Studyo",
     width: "w-64",
     height: "h-96",
     website: "https://www.helenstudyo.com/",
-    heading: "Founded my own shop.",
+    heading: "Founded my online shop.",
   },
   Bootcamp: {
     date: "2021",
-    description: "I attended 6 month Full-stack course in Epicode",
+    description: " 6 month full-stack course",
     imgSrc: "/chair.jpg",
-    detail: "I picked my chair very diligently for the first time.",
+    detail: "Epicode School",
     width: "",
     height: "h-96",
     website: "https://epicode.com/",
-    heading: "My first step to tech world.",
+    heading: "Picked my chair very diligently for the first time.",
   },
   Mom: {
     date: "2021-2024",
@@ -165,12 +186,23 @@ export const keyStones: Record<
   },
   Cloock: {
     date: "2024-now",
-    description: "Very lovely cloock.app",
-    imgSrc: "/blank1.jpg",
-    detail: "",
+    description:
+      "It appeared that leaving an unnecessary 'gap' between two lines of code is a cardinal sin! Lesson learned: keep the code clean and tidy!",
+    imgSrc: "/cloock.png",
+    detail: "Cloock.co",
     width: "",
     height: "h-24",
-    website: "htps://cloock.co/",
-    heading: "Currently working on this upcoming minimal daily planner app",
+    website: "https://cloock.co/",
+    heading: "Currently a frontend developer here",
   },
+};
+
+export const profile: {
+  jumbotron: string;
+  aboutMe: string;
+} = {
+  jumbotron:
+    " Greetings! I'm Hilal, I know a frontend magic that turns coffee into codes!",
+  aboutMe:
+    "I'm a frontend developer who found that coding is the most enjoyable and fulfilling among my previous work experiences. I also love contributing to projects and sharing insights through writing. Outside of work, I have two workout hobbies: one is keeping up with my energetic little boy, and the other is finding calm with yoga and pilates.",
 };
