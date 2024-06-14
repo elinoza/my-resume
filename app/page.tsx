@@ -76,45 +76,6 @@ export default function Home() {
           </a>
         </div>
       </section>
-      <section className="mb-36 ">
-        <hr className="border-zinc-800" />
-        <h1 className="text-7xl  py-5 mt-1 mb-7">Who am I?</h1>
-        <p>{profile?.aboutMe}</p>
-        <h1 className="text-xl my-5">Key Stones</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-3  gap-6">
-          {keyStonesArray.reverse().map((stone, i) => (
-            <div key={i} className="">
-              <div
-                className={clsx(
-                  stone !== "Cloock" &&
-                    stone !== "BigBang" &&
-                    "grayscale contrast-110",
-                  " overflow-hidden bg-black "
-                )}
-              >
-                <img src={keyStones[stone]?.imgSrc} alt={stone} />
-              </div>
-              <span>{keyStones[stone]?.date}</span>
-              <h1>{keyStones[stone]?.heading}</h1>
-              <p className="text-stone-400">{keyStones[stone]?.description}</p>
-              {!keyStones[stone]?.website ? (
-                <p className="text-stone-400 tet-sm">
-                  {keyStones[stone]?.detail}
-                </p>
-              ) : (
-                <a
-                  href={keyStones[stone]?.website}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-stone-400 tet-sm hover:text-black"
-                >
-                  {keyStones[stone]?.detail}
-                </a>
-              )}
-            </div>
-          ))}
-        </div>
-      </section>
       <section>
         <hr className="border-zinc-800" />
         <h1 className="text-7xl  py-5 mt-1 mb-7">Work</h1>
@@ -164,7 +125,6 @@ export default function Home() {
             ))}
         </div>
       </section>
-
       <hr className="border-zinc-800 mt-16" />
       <section>
         {" "}
@@ -210,7 +170,45 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      <section className="mb-36 ">
+        <hr className="border-zinc-800" />
+        <h1 className="text-7xl  py-5 mt-1 mb-7">Who am I?</h1>
+        <p>{profile?.aboutMe}</p>
+        <h1 className="text-xl my-5">Key Stones</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-3  gap-6">
+          {keyStonesArray.reverse().map((stone, i) => (
+            <div key={i} className="">
+              <div
+                className={clsx(
+                  stone !== "Cloock" &&
+                    stone !== "BigBang" &&
+                    "grayscale contrast-110",
+                  " overflow-hidden bg-black "
+                )}
+              >
+                <img src={keyStones[stone]?.imgSrc} alt={stone} />
+              </div>
+              <span>{keyStones[stone]?.date}</span>
+              <h1>{keyStones[stone]?.heading}</h1>
+              <p className="text-stone-400">{keyStones[stone]?.description}</p>
+              {!keyStones[stone]?.website ? (
+                <p className="text-stone-400 tet-sm">
+                  {keyStones[stone]?.detail}
+                </p>
+              ) : (
+                <a
+                  href={keyStones[stone]?.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-stone-400 tet-sm hover:text-black"
+                >
+                  {keyStones[stone]?.detail}
+                </a>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
       <footer className="text-xl mt-16 flex justify-between">
         {" "}
         <div className="text-sm flex items-center p-3 [&_span]:mx-2 text-stone-500">
