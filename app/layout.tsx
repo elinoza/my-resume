@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${helveticaNeue.variable} font-helvetica font-thin`}>
+      <body className={`${helveticaNeue.variable} font-helvetica font-[200]`}>
         {children}
       </body>
     </html>

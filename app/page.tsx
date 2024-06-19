@@ -28,7 +28,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="container p-1 flex-col mx-auto  ">
+    <main className="container p-2 flex-col mx-auto  ">
       <header className="text-stone-400 fixed top-0 left-0 right-0 py-3 px-24 my-5 flex items-center text-xl justify-end z-10">
         <a
           href="mailto:hillcakmak@gmail.com"
@@ -78,34 +78,43 @@ export default function Home() {
       </section>
       <section>
         <hr className="border-zinc-800" />
-        <h1 className="text-7xl  py-5 mt-1 mb-7">Work</h1>
-        <div className=" grid  grid-cols-3 gap-2 ">
+        <div className="flex justify-between items-center py-5 mt-1 mb-7">
+          {" "}
+          <h1 className="text-7xl">Work </h1>
+          <a
+            href={"https://github.com/elinoza?tab=repositories"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="right-5 text-sm text-stone-500 hover:text-black "
+          >
+            + see more
+          </a>
+        </div>
+
+        <div className="flex flex-col gap-2 divide-y  ">
           {" "}
           {works &&
             works.map((work, index) => (
               <a
                 key={index}
-                className={clsx(
-                  heights[index],
-                  "bg-[#F4F4F4] rounded-xl p-3 w-full flex flex-col justify-between hover:shadow-md"
-                )}
+                className="group rounded-xl py-3"
                 href={work.WebUrl}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <div>
                   {" "}
-                  <h1 className="text-xl mb-2">{work.projectName}</h1>
-                  <p>{work.Description} </p>
+                  <h1 className="text-xl mb-2 font-[400]">
+                    {work.projectName}
+                  </h1>
+                  <p className="text-stone-500 group-hover:text-black">
+                    {work.Description}{" "}
+                  </p>
                 </div>
 
-                <div>
+                <div className="flex items-center space-x-3 mt-4">
                   {work.Tools.map((tool, index) => (
-                    <span
-                      className="flex items-center justify-end text-sm"
-                      key={index}
-                    >
-                      {tool}
+                    <span className="flex items-center text-xs" key={index}>
                       <div
                         className={clsx(
                           {
@@ -115,9 +124,10 @@ export default function Home() {
                             "bg-green-500": tool === "MongoDB",
                             "bg-rose-500": tool === "ExpressJS",
                           },
-                          " w-3 h-3 rounded-full inline-block ml-2"
+                          " w-2 h-2 inline-block mr-1 rounded-sm"
                         )}
                       ></div>
+                      {tool}
                     </span>
                   ))}
                 </div>
@@ -129,9 +139,9 @@ export default function Home() {
       <section>
         {" "}
         <div className="flex justify-end  ">
-          <h1 className="text-7xl py-5 mt-1 mb-7 ">Skill Set</h1>
+          <h1 className="text-7xl  py-5 mt-1 mb-7 ">Skill Set</h1>
         </div>
-        <div className="flex text-xl flex-wrap justify-center bg-stone-100 mb-64  ">
+        <div className="flex text-xl flex-wrap justify-center bg-stone-100 mb-64">
           <div className="flex items-center  justify-center m-3 p-3 flex-1 ">
             <span>ReactJS</span>
             <span className="text-2xl ml-2 text-[#00D5F7]">
