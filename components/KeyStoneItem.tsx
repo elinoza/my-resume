@@ -5,25 +5,25 @@ type KeyStonesItemProps = {
 };
 const KeyStoneItem = ({ keyStones, stone }: KeyStonesItemProps) => {
   return (
-    <div className="mb-3 break-inside-avoid relative  ">
+    <div className="relative mb-3 break-inside-avoid">
       <div
         className={clsx(
           stone !== "BigBang" && "grayscale",
-          "overflow-hidden h-80 sm:h-auto"
+          "h-80 overflow-hidden sm:h-auto",
         )}
       >
         <img
           src={keyStones[stone]?.imgSrc}
           alt={stone}
-          className="w-full h-full object-cover object-center"
+          className="h-full w-full object-cover object-center"
         />
       </div>
-      <div className="card-content absolute flex flex-col top-[50%] justify-end p-2 bottom-0 left-0 right-0   ">
-        <span className=" text-stone-300 drop-shadow-lg text-sm font-medium">
+      <div className="card-content absolute bottom-0 left-0 right-0 top-[50%] flex flex-col justify-end p-2">
+        <span className="text-sm font-medium text-stone-300 drop-shadow-lg">
           {keyStones[stone]?.date}
         </span>
         <h1 className="font-medium">{keyStones[stone]?.heading}</h1>
-        <p className="text-stone-200 drop-shadow-lg ">
+        <p className="text-stone-200 drop-shadow-lg">
           {keyStones[stone]?.description}
         </p>
         {!keyStones[stone]?.website ? (
@@ -35,7 +35,7 @@ const KeyStoneItem = ({ keyStones, stone }: KeyStonesItemProps) => {
             href={keyStones[stone]?.website}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-stone-400 hover:text-white drop-shadow-lg "
+            className="text-stone-400 drop-shadow-lg hover:text-white"
           >
             {keyStones[stone]?.detail}
           </a>

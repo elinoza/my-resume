@@ -14,13 +14,13 @@ const WorkItem = ({ work }: WorkItemProps) => {
     >
       <div>
         {" "}
-        <h1 className="text-xl mb-2 font-[400]">{work?.projectName}</h1>
+        <h1 className="mb-2 text-xl font-[400]">{work?.projectName}</h1>
         <p className="text-stone-500 group-hover:text-black">
           {work?.Description}{" "}
         </p>
       </div>
 
-      <div className="flex items-center space-x-3 mt-4">
+      <div className="mt-4 flex items-center space-x-3">
         {work?.Tools.map((tool: string, index: number) => (
           <span className="flex items-center text-xs" key={index}>
             <div
@@ -32,7 +32,7 @@ const WorkItem = ({ work }: WorkItemProps) => {
                   "bg-green-500": tool === "MongoDB",
                   "bg-rose-500": tool === "ExpressJS",
                 },
-                " w-2 h-2 inline-block mr-1 rounded-sm"
+                "mr-1 inline-block h-2 w-2 rounded-sm",
               )}
             ></div>
             {tool}

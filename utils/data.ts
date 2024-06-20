@@ -57,18 +57,18 @@ export const works = [
     Fe: "https://github.com/elinoza/quiz-fe",
     Be: "https://github.com/elinoza/quiz-be",
   },
-  // {
-  //   projectName: "Linkedin Learning Clone",
-  //   PosterUrl:
-  //     "https://res.cloudinary.com/elinoza/image/upload/v1700477559/DALL_E_2023-11-20_11.52.44_-_A_softly-colored_image_of_an_open_laptop_on_a_pastel-colored_desk._The_laptop_displays_the_LinkedIn_Learning_website_with_its_screen_showing_a_gentle_wybqz0.png",
-  //   Description:
-  //     "LinkedIn Learning website clone for watching training videos, skill acquisition, and progress tracking. ",
-  //   Tools: ["ReactJS", "MongoDB", "ExpressJS"],
-  //   WebUrl: "https://e-learning-platform-fe-git-main-elinoza.vercel.app/",
-  //   Fe: "https://github.com/elinoza/e-learning-platform-fe",
-  //   Height: "52",
-  //   Be: "https://github.com/elinoza/e-learning-platform-be",
-  // },
+  {
+    projectName: "Linkedin Learning Clone",
+    PosterUrl:
+      "https://res.cloudinary.com/elinoza/image/upload/v1700477559/DALL_E_2023-11-20_11.52.44_-_A_softly-colored_image_of_an_open_laptop_on_a_pastel-colored_desk._The_laptop_displays_the_LinkedIn_Learning_website_with_its_screen_showing_a_gentle_wybqz0.png",
+    Description:
+      "LinkedIn Learning website clone for watching training videos, skill acquisition, and progress tracking. ",
+    Tools: ["ReactJS", "MongoDB", "ExpressJS"],
+    WebUrl: "https://e-learning-platform-fe-git-main-elinoza.vercel.app/",
+    Fe: "https://github.com/elinoza/e-learning-platform-fe",
+    Height: "52",
+    Be: "https://github.com/elinoza/e-learning-platform-be",
+  },
   // {
   //   projectName: "Weather App",
   //   PosterUrl:
@@ -196,3 +196,22 @@ export const profile: {
   aboutMe:
     "I'm a frontend developer and out of all my previous work experiences, I've found coding to be the most enjoyable and fulfilling.I also love contributing to open source projects and sharing insights through writing. Outside of work, I have two workout hobbies: one is keeping up with my energetic little boy, and the other is finding calm with yoga and pilates.",
 };
+
+export const articles: { name: string; url: string }[] = [
+  {
+    name: "Resolved: Some Components Not Responding to Tailwind Classes After Tailwind’s Dark Mode Strategy Update (v3.4.1)",
+    url: "https://medium.com/@hilalsem/overcoming-specificity-challenges-arising-from-tailwinds-dark-mode-strategy-update-a-contributor-s-34ae4d9b3d11",
+  },
+  {
+    name: "Dark Mode Issue Resolved in Tailwind CSS: A Contributor’s Journey",
+    url: "https://medium.com/@hilalsem/dark-mode-issue-resolved-in-tailwind-css-a-contributors-journey-c9dce098bdbe",
+  },
+  {
+    name: "A Guide to Contributing to an Open Source Project: A Contributor’s Journey",
+    url: "https://medium.com/@hilalsem/a-guide-to-contributing-to-an-open-source-project-a-contributors-journey-196ba953179a",
+  },
+  {
+    name: "Resolving Upgrade Challenges: Node.js, React Router, and Deployment Fixes",
+    url: "https://medium.com/@hilalsem/resolving-upgrade-challenges-node-js-react-router-and-deployment-fixes-87f496cc8457",
+  },
+];

@@ -5,9 +5,9 @@ import { RiNextjsFill } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <footer className="text-xl mt-16 flex justify-between">
+    <footer className="mt-16 flex justify-between text-xl">
       {" "}
-      <div className="text-sm flex items-center p-3 [&_span]:mx-2 text-stone-500">
+      <div className="flex items-center p-3 text-sm text-stone-500 [&_span]:mx-2">
         {" "}
         Built with
         <span>
@@ -15,7 +15,7 @@ const Footer = () => {
         </span>
         deployed on <span>{<RxVercelLogo />}</span>{" "}
       </div>
-      <div className="flex gap-x-3 items-center ">
+      <div className="flex items-center gap-x-3">
         {" "}
         <a
           className="hover:text-stone-500"
