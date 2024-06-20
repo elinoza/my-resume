@@ -147,7 +147,10 @@ export default function Home() {
         </div>
         {articles &&
           articles.map((article, i) => (
-            <div className="my-2 border p-5 text-stone-600 hover:text-black">
+            <div
+              key={i}
+              className="my-2 border p-5 text-stone-600 hover:text-black"
+            >
               <a href={article?.url}>{article?.name}</a>
             </div>
           ))}
