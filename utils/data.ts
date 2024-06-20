@@ -107,19 +107,15 @@ export const keyStones: Record<
     heading: string;
     description: string;
     imgSrc: string;
-    height: string;
     detail: string;
     website: string;
-    width: string;
   }
 > = {
   BigBang: {
-    date: "25.11.1990",
-    description: "only for me.",
+    date: "1990",
+    description: "Only for me.",
     imgSrc: "/bigbang.jpg",
     detail: "",
-    width: "",
-    height: "h-24",
     website: "",
     heading: "Big bang.",
   },
@@ -128,8 +124,6 @@ export const keyStones: Record<
     description: "First touch with algorithms & software.",
     imgSrc: "/blank1.jpg",
     detail: "Sakarya University",
-    width: "",
-    height: "h-24",
     website: "https://www.sakarya.edu.tr/",
     heading: "Industrial Engineering ",
   },
@@ -138,10 +132,8 @@ export const keyStones: Record<
     description: "Developing HR systems.",
     imgSrc: "/blank1.jpg",
     detail: "Istanbul Municipality",
-    width: "",
-    height: "h-24",
     website: "https://www.metro.istanbul/en/",
-    heading: "Performance & Talent Management Specialist",
+    heading: "HR Development Specialist",
   },
   Wedding: {
     date: "2015",
@@ -149,28 +141,30 @@ export const keyStones: Record<
       "I went to university for a degree and ended up with a lifelong roommate!",
     imgSrc: "/wedding.jpg",
     detail: "",
-    width: "w-96",
-    height: "h-96",
     website: "",
-    heading: "got married",
+    heading: "Got married",
   },
   OwnShop: {
     date: "2017-2020",
     description: "I was the designer also.",
     imgSrc: "/helen.jpg",
     detail: "Helen Studyo",
-    width: "w-64",
-    height: "h-96",
     website: "https://www.helenstudyo.com/",
     heading: "Founded my online shop.",
   },
+  KofteciYusuf: {
+    date: "2020",
+    description: "",
+    imgSrc: "/blank2.jpg",
+    detail: "Köfteci Yusuf",
+    website: "https://kofteciyusuf.com/",
+    heading: "Performance & Talent Management Specialist",
+  },
   Bootcamp: {
     date: "2021",
-    description: " 6 month full-stack course",
+    description: " 6 month full-stack (MERN) course",
     imgSrc: "/chair.jpg",
     detail: "Epicode School",
-    width: "",
-    height: "h-96",
     website: "https://epicode.com/",
     heading: "Picked my chair very diligently for the first time.",
   },
@@ -179,8 +173,6 @@ export const keyStones: Record<
     description: "Everything has changed since then.A parental break",
     imgSrc: "/birth.jpeg",
     detail: "",
-    width: "",
-    height: "h-64",
     website: "",
     heading: "Became a mom.",
   },
@@ -188,10 +180,8 @@ export const keyStones: Record<
     date: "2024-now",
     description:
       "It appeared that leaving an unnecessary 'gap' between two lines of code is a cardinal sin! Lesson learned: keep the code clean and tidy!",
-    imgSrc: "/blank1.jpg",
+    imgSrc: "/blank3.jpg",
     detail: "Cloock.co",
-    width: "",
-    height: "h-24",
     website: "https://cloock.co/",
     heading: "Currently a frontend developer here",
   },
@@ -204,5 +194,5 @@ export const profile: {
   jumbotron:
     " Greetings! I'm Hilal, I know a frontend magic that turns coffee into codes!",
   aboutMe:
-    "I'm a frontend developer who found that coding is the most enjoyable and fulfilling among my previous work experiences. I also love contributing to projects and sharing insights through writing. Outside of work, I have two workout hobbies: one is keeping up with my energetic little boy, and the other is finding calm with yoga and pilates.",
+    "I'm a frontend developer and out of all my previous work experiences, I've found coding to be the most enjoyable and fulfilling.I also love contributing to open source projects and sharing insights through writing. Outside of work, I have two workout hobbies: one is keeping up with my energetic little boy, and the other is finding calm with yoga and pilates.",
 };

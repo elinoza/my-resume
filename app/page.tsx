@@ -1,45 +1,23 @@
 "use client";
 import React from "react";
-import clsx from "clsx";
 
-import { works, keyStones, profile } from "../utils/works";
-import { FaLinkedin, FaGithub, FaAngleDoubleDown } from "react-icons/fa";
-import { FaMedium, FaNodeJs } from "react-icons/fa6";
+import KeyStoneItem from "../components/KeyStoneItem";
+import WorkItem from "../components/WorkItem";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import { works, keyStones, profile } from "../utils/data";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaMedium } from "react-icons/fa6";
 import { GrReactjs } from "react-icons/gr";
 import { SiGmail, SiMongodb } from "react-icons/si";
-import { SiExpress, SiSass } from "react-icons/si";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
-import { RxVercelLogo } from "react-icons/rx";
 
 export default function Home() {
   const keyStonesArray = Object.keys(keyStones);
-  const heights = [
-    "col-span-2",
-    ,
-    "",
-    "col-span-2",
-    "col-span-3",
-    "",
-    "col-span-2",
-    "",
-    "",
-    "col-span-2",
-  ];
-
   return (
     <main className="container p-2 flex-col mx-auto  ">
-      <header className="text-stone-400 fixed top-0 left-0 right-0 py-3 px-24 my-5 flex items-center text-xl justify-end z-10">
-        <a
-          href="mailto:hillcakmak@gmail.com"
-          rel="noopener noreferrer"
-          className="hidden sm:block"
-        >
-          <button className=" rounded-3xl bg-stone-800 p-2 px-3 text-stone-200 ">
-            Contact me
-          </button>
-        </a>
-      </header>
+      <Header />
       <section className=" min-h-screen flex flex-col justify-center mt-24">
         <span className="text-sm text-stone-500 mb-2">
           React,Typescript Developer based in Türkiye
@@ -94,45 +72,7 @@ export default function Home() {
         <div className="flex flex-col gap-2 divide-y  ">
           {" "}
           {works &&
-            works.map((work, index) => (
-              <a
-                key={index}
-                className="group rounded-xl py-3"
-                href={work.WebUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div>
-                  {" "}
-                  <h1 className="text-xl mb-2 font-[400]">
-                    {work.projectName}
-                  </h1>
-                  <p className="text-stone-500 group-hover:text-black">
-                    {work.Description}{" "}
-                  </p>
-                </div>
-
-                <div className="flex items-center space-x-3 mt-4">
-                  {work.Tools.map((tool, index) => (
-                    <span className="flex items-center text-xs" key={index}>
-                      <div
-                        className={clsx(
-                          {
-                            "bg-blue-500": tool === "Typescript",
-                            "bg-orange-500": tool === "NextJS",
-                            "bg-yellow-500": tool === "ReactJS",
-                            "bg-green-500": tool === "MongoDB",
-                            "bg-rose-500": tool === "ExpressJS",
-                          },
-                          " w-2 h-2 inline-block mr-1 rounded-sm"
-                        )}
-                      ></div>
-                      {tool}
-                    </span>
-                  ))}
-                </div>
-              </a>
-            ))}
+            works.map((work, index) => <WorkItem key={index} work={work} />)}
         </div>
       </section>
       <hr className="border-zinc-800 mt-16" />
@@ -185,75 +125,13 @@ export default function Home() {
         <h1 className="text-7xl  py-5 mt-1 mb-7">Who am I?</h1>
         <p>{profile?.aboutMe}</p>
         <h1 className="text-xl my-5">Key Stones</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-3  gap-6">
+        <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-3 text-white">
           {keyStonesArray.reverse().map((stone, i) => (
-            <div key={i} className="">
-              <div
-                className={clsx(
-                  stone !== "Cloock" &&
-                    stone !== "BigBang" &&
-                    "grayscale contrast-110",
-                  " overflow-hidden bg-black "
-                )}
-              >
-                <img src={keyStones[stone]?.imgSrc} alt={stone} />
-              </div>
-              <span>{keyStones[stone]?.date}</span>
-              <h1>{keyStones[stone]?.heading}</h1>
-              <p className="text-stone-400">{keyStones[stone]?.description}</p>
-              {!keyStones[stone]?.website ? (
-                <p className="text-stone-400 tet-sm">
-                  {keyStones[stone]?.detail}
-                </p>
-              ) : (
-                <a
-                  href={keyStones[stone]?.website}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-stone-400 tet-sm hover:text-black"
-                >
-                  {keyStones[stone]?.detail}
-                </a>
-              )}
-            </div>
+            <KeyStoneItem key={i} stone={stone} keyStones={keyStones} />
           ))}
         </div>
       </section>
-      <footer className="text-xl mt-16 flex justify-between">
-        {" "}
-        <div className="text-sm flex items-center p-3 [&_span]:mx-2 text-stone-500">
-          {" "}
-          Built with
-          <span>
-            <RiNextjsFill />
-          </span>
-          deployed on <span>{<RxVercelLogo />}</span>{" "}
-        </div>
-        <div className="flex gap-x-3 items-center ">
-          {" "}
-          <a
-            href="https://github.com/elinoza"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub />{" "}
-          </a>
-          <a
-            href="https://www.linkedin.com/in/hilalsemercioglu/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin />
-          </a>
-          <a
-            href="https://medium.com/@hilalsem"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaMedium />{" "}
-          </a>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }
