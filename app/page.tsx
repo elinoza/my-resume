@@ -19,9 +19,9 @@ export default function Home() {
     <main className="container mx-auto flex-col p-2">
       <Header />
       <section className="mt-24 flex min-h-screen flex-col justify-center">
-        <span className="mb-2 text-sm text-stone-500">
+        <h1 className="mb-2 text-sm text-stone-500">
           React,Typescript Developer based in Türkiye
-        </span>
+        </h1>
         <p className="mb-16 text-3xl leading-relaxed"> {profile?.jumbotron}</p>
         <div className="flex justify-start gap-x-3 p-3 text-2xl">
           <a
