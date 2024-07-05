@@ -2,8 +2,7 @@ export const works = [
   {
     projectName: "Slot Machine",
     PosterUrl: "",
-    Description:
-      "A slot machine game built with Next.js, Tailwind CSS, and TypeScript.",
+    Description: "A slot machine game.",
     Tools: ["NextJS", "Typescript"],
     WebUrl: "https://slot-machine-tau.vercel.app/",
     Fe: "https://github.com/elinoza/slot-machine",
