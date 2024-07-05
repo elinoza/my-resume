@@ -1,5 +1,16 @@
 export const works = [
   {
+    projectName: "Slot Machine",
+    PosterUrl: "",
+    Description:
+      "A slot machine game built with Next.js, Tailwind CSS, and TypeScript.",
+    Tools: ["NextJS", "Typescript"],
+    WebUrl: "https://slot-machine-tau.vercel.app/",
+    Fe: "https://github.com/elinoza/slot-machine",
+    Height: "52",
+    Be: "",
+  },
+  {
     projectName: "Markdown Editor",
     PosterUrl:
       "https://private-user-images.githubusercontent.com/72200043/336624351-8c4a0124-8af0-4805-941a-567b89600b21.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTgyMDkzMzgsIm5iZiI6MTcxODIwOTAzOCwicGF0aCI6Ii83MjIwMDA0My8zMzY2MjQzNTEtOGM0YTAxMjQtOGFmMC00ODA1LTk0MWEtNTY3Yjg5NjAwYjIxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjEyVDE2MTcxOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTUyZGNlZmQ3M2MyYmMxOGQxZTM1M2U4YmU0MGI3ZGYyOThiMjQ0MzYyYmU3YmNhZDcxODA1ZjcwZWU2MWQwMWUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.QcJvTNozgk4lyyAfcvcQDScQ8W0KiewQnQs8Gfu5jt8",
