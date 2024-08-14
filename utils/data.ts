@@ -1,5 +1,16 @@
 export const works = [
   {
+    projectName: "Lodash Library Recreation Project",
+    PosterUrl: "",
+    Description:
+      "Recration of some utility functions similar to Lodash using JavaScript and there are corresponding Jest tests.",
+    Tools: ["NextJS"],
+    WebUrl: "https://github.com/elinoza/my_lodash",
+    Fe: "https://github.com/elinoza/my_lodash",
+    Height: "52",
+    Be: "",
+  },
+  {
     projectName: "Slot Machine",
     PosterUrl: "",
     Description: "A slot machine game.",
@@ -208,6 +219,10 @@ export const profile: {
 };
 
 export const articles: { name: string; url: string }[] = [
+  {
+    name: "Build Professional Email Templates in 5 Minutes with React Email, Next.JS, TypeScript, and Tailwind CSS",
+    url: "https://medium.com/@hilalsem/build-professional-email-templates-in-5-minutes-with-react-email-next-js-4002670ee026",
+  },
   {
     name: "Resolved: Some Components Not Responding to Tailwind Classes After Tailwind’s Dark Mode Strategy Update (v3.4.1)",
     url: "https://medium.com/@hilalsem/overcoming-specificity-challenges-arising-from-tailwinds-dark-mode-strategy-update-a-contributor-s-34ae4d9b3d11",
