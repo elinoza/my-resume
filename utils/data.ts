@@ -1,9 +1,20 @@
 export const works = [
   {
+    projectName: "Text Perfector AI",
+    PosterUrl: "",
+    Description:
+      "Ai powered grammer checker:This project provides an interface for users to check their texts. Users can input a text and see the modifications and suggestions made by AI.",
+    Tools: ["NextJS", "Typescript"],
+    WebUrl: "text-perfector.vercel.app",
+    Fe: "https://github.com/elinoza/text-perfector-ai",
+    Height: "52",
+    Be: "",
+  },
+  {
     projectName: "Lodash Library Recreation Project",
     PosterUrl: "",
     Description:
-      "Recration of some utility functions similar to Lodash using JavaScript and there are corresponding Jest tests.",
+      "Recreation of some utility functions similar to Lodash using JavaScript and there are corresponding Jest tests.",
     Tools: ["NextJS"],
     WebUrl: "https://github.com/elinoza/my_lodash",
     Fe: "https://github.com/elinoza/my_lodash",
@@ -67,29 +78,29 @@ export const works = [
     Height: "64",
     Be: "",
   },
-  {
-    projectName: "Quiz Game",
-    PosterUrl:
-      "https://res.cloudinary.com/elinoza/image/upload/v1700552276/DALL_E_2023-11-21_10.35.56_-_A_young_child_in_their_bedroom_slightly_excited_playing_a_quiz_on_their_laptop._The_child_is_seen_from_a_side_angle_and_the_laptop_screen_has_the_w_yutgnt.png",
-    Description:
-      "This is a JavaScript quiz application that asks users questions and provides them with scores.All the animations are made by vanilla CSS.",
-    Tools: ["ReactJS", "MongoDB", "ExpressJS"],
-    WebUrl: "https://quiz-fe-elinoza.vercel.app/",
-    Fe: "https://github.com/elinoza/quiz-fe",
-    Be: "https://github.com/elinoza/quiz-be",
-  },
-  {
-    projectName: "Linkedin Learning Clone",
-    PosterUrl:
-      "https://res.cloudinary.com/elinoza/image/upload/v1700477559/DALL_E_2023-11-20_11.52.44_-_A_softly-colored_image_of_an_open_laptop_on_a_pastel-colored_desk._The_laptop_displays_the_LinkedIn_Learning_website_with_its_screen_showing_a_gentle_wybqz0.png",
-    Description:
-      "LinkedIn Learning website clone for watching training videos, skill acquisition, and progress tracking. ",
-    Tools: ["ReactJS", "MongoDB", "ExpressJS"],
-    WebUrl: "https://e-learning-platform-fe-git-main-elinoza.vercel.app/",
-    Fe: "https://github.com/elinoza/e-learning-platform-fe",
-    Height: "52",
-    Be: "https://github.com/elinoza/e-learning-platform-be",
-  },
+  // {
+  //   projectName: "Quiz Game",
+  //   PosterUrl:
+  //     "https://res.cloudinary.com/elinoza/image/upload/v1700552276/DALL_E_2023-11-21_10.35.56_-_A_young_child_in_their_bedroom_slightly_excited_playing_a_quiz_on_their_laptop._The_child_is_seen_from_a_side_angle_and_the_laptop_screen_has_the_w_yutgnt.png",
+  //   Description:
+  //     "This is a JavaScript quiz application that asks users questions and provides them with scores.All the animations are made by vanilla CSS.",
+  //   Tools: ["ReactJS", "MongoDB", "ExpressJS"],
+  //   WebUrl: "https://quiz-fe-elinoza.vercel.app/",
+  //   Fe: "https://github.com/elinoza/quiz-fe",
+  //   Be: "https://github.com/elinoza/quiz-be",
+  // },
+  // {
+  //   projectName: "Linkedin Learning Clone",
+  //   PosterUrl:
+  //     "https://res.cloudinary.com/elinoza/image/upload/v1700477559/DALL_E_2023-11-20_11.52.44_-_A_softly-colored_image_of_an_open_laptop_on_a_pastel-colored_desk._The_laptop_displays_the_LinkedIn_Learning_website_with_its_screen_showing_a_gentle_wybqz0.png",
+  //   Description:
+  //     "LinkedIn Learning website clone for watching training videos, skill acquisition, and progress tracking. ",
+  //   Tools: ["ReactJS", "MongoDB", "ExpressJS"],
+  //   WebUrl: "https://e-learning-platform-fe-git-main-elinoza.vercel.app/",
+  //   Fe: "https://github.com/elinoza/e-learning-platform-fe",
+  //   Height: "52",
+  //   Be: "https://github.com/elinoza/e-learning-platform-be",
+  // },
   // {
   //   projectName: "Weather App",
   //   PosterUrl:
@@ -205,6 +216,14 @@ export const keyStones: Record<
     detail: "Cloock.co",
     website: "https://cloock.co/",
     heading: "Currently a frontend developer here",
+  },
+  Mindtown: {
+    date: "2024-now",
+    description: "",
+    imgSrc: "/mindtown.jpg",
+    detail: "Mindtown.ai",
+    website: "https://mindtown.ai/",
+    heading: "ui engineer",
   },
 };
 

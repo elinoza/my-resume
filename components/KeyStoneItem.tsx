@@ -8,8 +8,8 @@ const KeyStoneItem = ({ keyStones, stone }: KeyStonesItemProps) => {
     <div className="relative mb-3 break-inside-avoid">
       <div
         className={clsx(
-          stone !== "BigBang" && "grayscale",
-          "h-80 overflow-hidden sm:h-auto",
+          stone !== "BigBang" && stone !== "Mindtown" && "grayscale",
+          "h-80 overflow-hidden bg-black sm:h-auto",
         )}
       >
         <img
