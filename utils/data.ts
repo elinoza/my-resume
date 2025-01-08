@@ -5,7 +5,7 @@ export const works = [
     Description:
       "Ai powered grammar checker:This project provides an interface for users to check their texts. Users can input a text and see the modifications and suggestions made by AI.",
     Tools: ["NextJS", "Typescript"],
-    WebUrl: "text-perfector.vercel.app",
+    WebUrl: "https://text-perfector.vercel.app/",
     Fe: "https://github.com/elinoza/text-perfector-ai",
     Height: "52",
     Be: "",
